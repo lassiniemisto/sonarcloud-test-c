@@ -6,7 +6,8 @@ int * otherfunc(int a, int b)
 }
 
 int main() {
-   int * pointer = otherfunc(7, 2);
+   int * pointer = 0;
+   otherfunc(7, 2);
 
    *pointer = 0xDEADBEEF;
    printf("Hello, World!");
